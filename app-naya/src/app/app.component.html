@@ -1,0 +1,9 @@
+<div *ngIf="isvisible" style="width:500px;margin:250px auto;">
+  <h1>Choose From Following:</h1>
+  <br>
+  <button (click)="MakerPage()" class="btn btn-dark btns" style="margin-left:80px;">Maker</button>
+  <button (click)="DesignerPage()" class="btn btn-dark btns" style="margin-left:10px;">Designer</button>
+</div>
+
+<app-maker *ngIf="isMaker"></app-maker>
+<app-designer *ngIf="isDesigner"></app-designer>
